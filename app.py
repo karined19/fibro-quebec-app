@@ -1,19 +1,10 @@
-quebec-ressources-fibro/
-├─ app.py
-├─ requirements.txt
-├─ README.md
-├─ data/
-│  └─ resources.json
-├─ utils/
-│  ├─ __init__.py
-│  ├─ repository.py
-│  ├─ validation.py
-│  ├─ search.py
-│  ├─ recommender.py
-│  └─ export.py
-└─ tests/               # optionnel
-   ├─ __init__.py
-   └─ test_validation.py
+from __future__ import annotations
+
+from pathlib import Path
+import streamlit as st
+
+from utils.repository import JSONResourceRepository
+
 [
   {
     "id": "sqf",
